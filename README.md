@@ -1,5 +1,29 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Mini Loan App
+
+Welcome to the Mini Loan App! This application allows users to manage loan applications, approvals, and repayments.
+
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Creating a Loan](#creating-a-loan)
+  - [Loan Dashboard](#loan-dashboard)
+  - [Loan Applications (Admin)](#loan-applications-admin)
+
+## Features
+
+- User authentication
+- Loan application creation
+- Visibility of all loans and loan EMI's as per terms.
+- Loan approval workflow
+- Repayment tracking
+- Admin dashboard for loan approval
+- Real-time updates
+
 ## Getting Started
 
 First, run the development server:
@@ -16,25 +40,49 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Before running the app, make sure you have the following installed locally:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Node.js](https://nodejs.org/) : Make sure you have Node.js installed locally.
+- Next.js: Since it is a Next.js app you must know how to create a next app.
+- TailwindCSS: make sure you install tailwind while creating next app. 
+- [Firebase](https://firebase.google.com/): install it using "npm install firebase" command on terminal in your project directory
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Installation
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mini-loan-app.git
 
-To learn more about Next.js, take a look at the following resources:
+2. Or Create you next app by npx create-next-app@latest
+   then it will ask you to install dependencies install it by following:
+    use TypeScript - Yes
+    use ESlint - Yes
+    use Tailwind - Yes
+    use SRC/Directory - Yes
+    use App router - NO
+    customize imprt alias - NO.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ ### Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Run the application: npm run dev
+2. Open your browser and go to http://localhost:3000 to view the app.
 
-## Deploy on Vercel
+### Creating a Loan
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Log in using your email and password.
+Navigate to the "Create Loan" section.
+Fill in the loan details and submit the application.
+### Loan Dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+View your current loans and repayment schedules.
+Real-time updates for loan status changes.
+### Loan Applications (Admin)
+
+Log in as an admin (Email:"admin@gmail.com", Password: 123456). You can modify admin emails in code base
+Approve or reject pending loan applications.
+View approved loans and manage repayment statuses.
+
+
+
